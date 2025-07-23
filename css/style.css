@@ -1,12 +1,13 @@
 :root {
-    --main-green:#21c531;
+    --main-green: #21c531;
     --background: #f6f8fa;
     --font-black444: #444444;
     --font-black222: #222222;
     --section-margin-top: 50px;
 }
-/* header 시작 */
-header, 
+
+/* 헤더 시작 */
+header,
 .header_menu {
     display: flex;
     justify-content: space-between;
@@ -19,7 +20,7 @@ header {
 }
 
 .header_menu {
-    margin: 0;
+    gap: 16px;
 }
 
 .header_menu > li {
@@ -43,14 +44,13 @@ header {
 .header_menu > li > a {
     text-decoration: none;
     padding: 14px 24px;
-
 }
+
 .header_menu > li:nth-child(2) > a {
     color: var(--font-black222);
 }
 
-.header_menu > li:nth-child(2) >
-a:hover {
+.header_menu > li:nth-child(2) > a:hover  {
     text-decoration: underline;
 }
 
@@ -60,13 +60,12 @@ a:hover {
 }
 
 .header_menu > li:nth-child(3) > a:hover,
-.button_box > button:last-child > a:hoverS {
-    box-shadow: 0 2px 8px
- rgba(33,197,49,.54);
+.button_box > button:first-child > a:hover {
+    box-shadow: 0 2px 8px rgba(33,197,49,.54);
 }
-/* header 끝 */
-/* main_cintainer 시작 */
+/* 헤더 끝 */
 
+/* main_container시작 */
 .main_container {
     background-color: var(--background);
     display: flex;
@@ -75,11 +74,12 @@ a:hover {
     align-items: center;
     padding: 50px;
 }
+
 .phone_img {
-    background: url(bg_sloganing.jpg);
+    background: url(bg_intro.jpg);
     width: 540px;
     height: 695px;
-    background-size: 548px auto;
+    background-size: 540px auto;
 }
 
 .main_text_box > h2 {
@@ -95,7 +95,7 @@ a:hover {
 
 .button_box {
     display: flex;
-    direction: column;
+    flex-direction: column;
     margin-top: 16px;
     gap: 12px;
 }
@@ -109,6 +109,7 @@ a:hover {
     width: 100%;
     display: inline-block;
     padding: 20px 0;
+    border-radius: 3px;
     color: #fff;
     text-decoration: none;
     background: var(--main-green);
@@ -133,11 +134,11 @@ a:hover {
 
 .link_text_box > p > a {
     color: var(--main-green);
-    font-weight: 600;
+    font-weight: 600;   
 }
 
 .bg_img_container {
-    background: url(bg_intro.jpg);
+    background: url(bg_sloganlmg.jpg);
     height: 540px;
     display: flex;
     flex-direction: column;
@@ -145,9 +146,8 @@ a:hover {
     justify-content: center;
     color: #fff;
     background-size: cover;
-    gap: 42px;
+    gap: 48px;
 }
-
 
 .bg_img_container > h2 {
     font-size: 42px;
@@ -156,17 +156,15 @@ a:hover {
 .bg_img_container > p {
     line-height: 24px;
 }
+/* main_container끝 */
 
-/* main_container 끝 */
-
-/* about_container 끝 */
+/* about_container 시작 */
 
 .about_container {
-  margin-top: var(--section-margin-top) 0;
-  display: flex;
-  justify-content: center;
+    margin: var(--section-margin-top) 0;
+    display: flex;
+    justify-content: center;
 }
-  
 
 .about_container > ul {
     display: flex;
@@ -177,7 +175,7 @@ a:hover {
 .about_list > figure {
     width: 300px;
     height: 160px;
-
+    background-size: cover;
 }
 
 .list_img_1 {
@@ -185,11 +183,11 @@ a:hover {
 }
 
 .list_img_2 {
-    background: url(img_seo01.jpg);
+    background: url(img_seo02.jpg);
 }
 
 .list_img_3 {
-    background: url(img_seo01.jpg);
+    background: url(img_seo03.jpg);
 }
 
 .about_list > h2 {
@@ -198,22 +196,21 @@ a:hover {
 }
 
 .about_list > p {
-    font-size: 24px;
     margin: 16px 0;
     font-size: 14px;
     line-height: 20px;
 }
+/* about_container 끝 */
 
-/* 끝 */
 /* band_recommend 시작 */
 .band_recommend {
     background: var(--background);
-    
+    padding: 50px 0;
 }
 
 .wrapper {
-   margin: 0 auto;
-   width: 1000px;
+    margin: 0 auto;
+    width: 1000px;
 }
 
 .recommend_text {
@@ -222,44 +219,46 @@ a:hover {
     align-items: center;
     margin-bottom: 50px;
 }
+
 .recommend_text > h2 {
     font-size: 24px;
 }
 
-.recommend_ul {
+.recomment_ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.recommend_list {
+.recomment_list {
     width: 500px;
-    margin: 8px 0;
+    margin: 12px 0;
     display: flex;
     gap: 12px;
 }
 
-.recommend_list > figure {
-    background: url();
+.recomment_list > figure {
+    background: url(202104240702446735_l.jpg);
     width: 93px;
     height: 93px;
     background-size: cover;
-} 
+    border-radius: 8px;
+}
 
-.recommend_text_box {
+.recomment_text_box > h2 {
     font-size: 16px;
     font-weight: 600;
     margin-bottom: 8px;
 }
 
-.recommend_text_box > p, 
-.recommend_text_box > div > span {
+.recomment_text_box > p,
+.recomment_text_box > div > span {
     font-size: 14px;
     color: var(--font-black444);
     margin: 8px 0;
 }
 
-.recommend_text_box > button {
+.recomment_text_box > button {
     padding: 2px 8px;
     border: 1px solid #ddd;
     background: #fff;
@@ -268,12 +267,12 @@ a:hover {
     color: #797979;
 }
 
-.recommend_text_box > button > span {
+.recomment_text_box > button > span {
     color: #000;
     font-weight: 600;
 }
+/* band_recommend 끝 */
 
-/* end */
 /* download 시작 */
 .download {
     display: flex;
@@ -292,5 +291,37 @@ a:hover {
 
 .download_left > div > h2 {
     font-size: 24px;
-    margin: 8px;
+    margin-bottom: 8px;
 }
+
+.download_store > a {
+    text-decoration: none;
+}
+/* download 끝 */
+
+/* footer 시작 */
+footer {
+    background: #2A3038;
+    padding: 32px;
+}
+
+footer > ul {
+    display: flex;
+    font-size: 14px;
+    width: 1000px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    gap: 8px;
+}
+
+footer > ul a {
+    color: #7f7f7f;
+    text-decoration: none;
+}
+
+footer > p {
+    color: #7f7f7f;
+    width: 1000px;
+    margin: 32px auto 0 auto;
+}
+/* footer 끝 */
